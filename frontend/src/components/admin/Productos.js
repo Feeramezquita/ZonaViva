@@ -8,7 +8,7 @@ function Productos() {
             <div className="card mt-4">
                 <div className="card-header">
                     <h4>Productos
-                        <Link to="#" className="btn btn-primary btn-sm float-end"> Nuevo Producto</Link>
+                        <Link to="/admin/AddProduct" className="btn btn-primary btn-sm float-end"> Nuevo Producto</Link>
                     </h4>
                 </div>
                 <div className="card-body">
@@ -30,7 +30,7 @@ function Productos() {
                                 <td>$50</td>
                                 <td>2 pieza</td>
                                 <td>
-                                    <Link to="#" className="btn btn-success btn-sm">Editar</Link>
+                                    <Link to="/admin/EditProduct" className="btn btn-success btn-sm">Editar</Link>
                                 </td>
                                 <td>
                                     <Link to="#" className="btn btn-danger btn-sm">Eliminar</Link>
