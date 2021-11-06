@@ -16,11 +16,12 @@ class CreateCursoTable extends Migration
         Schema::create('curso', function (Blueprint $table) {
             $table->id('id_item');
             $table->string('ponente_curso');
+            $table->text('presentacion');
             $table->tinyInteger('capacidad_curso');
-            $table->date('fecha_inicio_curso');
-            $table->date('fecha_fin_curso');
-            $table->time('hora_curso');
-            $table->smallInteger('duracion_curso');
+            $table->date('fecha_inicio_curso')->nullable();
+            $table->date('fecha_fin_curso')->nullable();
+            $table->time('hora_curso')->nullable();
+            $table->smallInteger('duracion_curso')->nullable();
 
             $table->foreign('id_item')->references('id_item')->on('item')
             ->onUpdate('cascade')

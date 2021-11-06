@@ -16,7 +16,7 @@ class CreateItemTable extends Migration
         Schema::create('item', function (Blueprint $table) {
             $table->id('id_item');
             $table->string('nombre_item');
-            $table->text('descripcion_item');
+            $table->text('descripcion_item')->nullable();
             $table->float('cuota_recuperacion', 7, 2);
             $table->enum('tipo_item', ['Producto', 'Curso']);
         });
