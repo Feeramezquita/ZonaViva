@@ -16,7 +16,7 @@ const Sidebar = () => {
                         <div className="sb-nav-link-icon"><i className="fas fa-box-open"></i></div>
                         Productos
                     </Link>
-                    <Link className="nav-link" to="#">
+                    <Link className="nav-link" to="/admin/usuarios">
                         <div className="sb-nav-link-icon"><i className="fas fa-users"></i></div>
                         Usuarios
                     </Link>
