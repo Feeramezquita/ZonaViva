@@ -22,21 +22,12 @@ function EditUsuario() {
                         </div>
                         <div className="form-group">
                             <div className="form-group">
-                                <label>Nombre</label>
+                                <label>Nombre Completo</label>
                                 <input
                                     type="name"
                                     className="form-control"
                                     id="nombreUsuario"
                                     placeholder="Nombre del usuario"
-                                />
-                            </div>
-                            <div className="form-group">
-                                <label>Apellido</label>
-                                <input
-                                    type="name"
-                                    className="form-control"
-                                    id="apellidoUsuario"
-                                    placeholder="Apellido del usuario"
                                 />
                             </div>
                         </div>

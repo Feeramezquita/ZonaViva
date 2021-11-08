@@ -7,7 +7,7 @@ function Usuarios() {
             <div className="card mt-4">
                 <div className="card-header">
                     <h4>Usuarios
-                        <Link to="/admin/AddUsuario" className="btn btn-primary btn-sm float-end"> Nuevo Producto</Link>
+                        <Link to="/admin/AddUsuario" className="btn btn-primary btn-sm float-end"> Nuevo Usuario</Link>
                     </h4>
                 </div>
                 <div className="card-body">
