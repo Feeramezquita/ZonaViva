@@ -20,7 +20,7 @@ function EditUsuario() {
                                 placeholder="Usuario"
                             />
                         </div>
-                        <div className="form-group">
+                        <div csName="form-group">
                             <div className="form-group">
                                 <label>Nombre Completo</label>
                                 <input
