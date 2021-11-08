@@ -12,10 +12,18 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto">
                 <li className="nav-item active">
-                    <Link className="nav-link" to="#">Home <span className="sr-only">(current)</span></Link>
+                    <Link className="nav-link" to="/home">Inicio <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/store">Tienda</Link>
+                    <Link className="nav-link" to="/nosotros">¿Quienes somos?</Link>
+                </li>
+               
+                <li className="nav-item">
+                    <Link className="nav-link" to="#">Donativos</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/contactanos">Contactos</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/login">Login</Link>
