@@ -47,7 +47,7 @@ function Register() {
                                     </div>
                                     <div className="form-group mb-3">
                                         <label>Email ID</label>
-                                        <input type="" name="name" onChange={handleInput} className="form-control" value={registerInput.email} />
+                                        <input type="" name="email" onChange={handleInput} className="form-control" value={registerInput.email} />
                                     </div>
                                     <div className="form-group mb-3">
                                         <label>Password</label>
