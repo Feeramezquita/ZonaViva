@@ -31,11 +31,10 @@ function Home(){
                 <div className='cursos'>
                     <div className='texto'>
                     <br></br><br></br><br></br><br></br><br></br><br></br>
-                        <h1>Cursos y talleres</h1>
+                        <h1></h1>
                         <br></br><br></br>
-                        <p>En Zona Viva tenemos talleres de crecimiento personal y espiritual, permaculturales, de agroecologia, artistico-culturales, entre otros.</p>
-                        <p>Todos nuestros talleres tienen clases practicas y teoricas. La duracion, costo y cupo del taller depende del mismo.</p>
-                        <button id='boton'>Cursos</button>
+                        <p></p>
+                        <button id='boton'></button>
                     </div>
                 </div>
                 <div id='imagen2'>
