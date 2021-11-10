@@ -16,8 +16,3 @@ body {
     margin-bottom: 2rem;
   }
 }
-
-/* JSFiddle layout display fix only, don't use */
-body {
-  min-height: 620px;
-}
