@@ -1,6 +1,6 @@
 import React from "react";
 
-function Page403(){
+function Page404(){
     return(
         <div className="Container">
             <div className="row justify-content-center">
@@ -15,4 +15,4 @@ function Page403(){
     );
 }
 
-export default Page403;
+export default Page404;
