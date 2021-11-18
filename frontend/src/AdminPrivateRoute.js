@@ -4,6 +4,7 @@ import MasterLayout from './layouts/admin/MasterLayout';
 import axios from 'axios';
 import swal from 'sweetalert';
 
+
 function AdminPrivateRoute({...rest}){
 
     const history = useHistory();
@@ -22,8 +23,8 @@ function AdminPrivateRoute({...rest}){
             setAuthenticated(false);
         };
     }, []);
-
-    axios.interceptors.response.use(undefined, function axiosRetryInterceptor(err){
+    
+    axios.interceptors.response.use( undefined, function (err){
             if(err.response.status === 401){
                 swal("Unauthorized", err.response.data.message, "warning");
                 history.push("/");
@@ -31,9 +32,8 @@ function AdminPrivateRoute({...rest}){
             return Promise.reject(err);
     });
 
-    axios.interceptors.response.use(function (response) {
-        }, function (error){
-            console.log(error);
+    axios.interceptors.response.use( undefined, function (error){
+
             if(error.response.status === 403){
                 swal("Forbidden", error.response.data.message, "warning");
                 history.push('/403');
@@ -44,6 +44,7 @@ function AdminPrivateRoute({...rest}){
         return Promise.reject(error);
         }
     );
+    
 
     if (loading){
         return <h1>Loading...</h1>

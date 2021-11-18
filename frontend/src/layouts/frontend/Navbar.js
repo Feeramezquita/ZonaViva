@@ -17,8 +17,6 @@ function Navbar() {
                 localStorage.removeItem('auth_name', res.data.username);
                 swal("Success", res.data.message, "success");
                 history.push('/');
-            }else{
-
             }
         });
     }
