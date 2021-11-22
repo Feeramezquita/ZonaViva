@@ -28,7 +28,7 @@ export default function LogIn({navigation}){
       
       <TouchableOpacity style={globalStyles.Registrar} onPress={() => navigation.push("Registrar")}>
         <Text style={globalStyles.subtitleText}>Crear cuenta nueva</Text>
-        <Ionicons name="person-add-outline" size={20} color="black" />
+        <Ionicons name="person-add-outline" size={20} color="black"/>
       </TouchableOpacity>
     </View>
   );

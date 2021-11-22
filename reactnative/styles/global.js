@@ -55,12 +55,12 @@ export const globalStyles =  StyleSheet.create({
         borderRadius: 10,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginBottom: 10,
+        marginBottom: 35,
     },
     Registrar: {
         backgroundColor: '#FFA400',
         padding: 15,
-        width: '90%',
+        width: '80%',
         borderRadius: 10,
         flexDirection: 'row',
         justifyContent: 'space-between'
