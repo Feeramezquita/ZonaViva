@@ -9,6 +9,12 @@ export const globalStyles =  StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#fff',
     },
+    container2: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
     tab: {
         flex: 1,
         justifyContent: 'center',
@@ -18,6 +24,7 @@ export const globalStyles =  StyleSheet.create({
         fontFamily: 'PS-Bold',
         fontSize: 30,
         color: '#333',
+        marginBottom: 15,
     },
     subtitleText: {
         fontFamily: 'PS-SemiBold',
@@ -45,6 +52,24 @@ export const globalStyles =  StyleSheet.create({
         borderBottomColor: '#FFFFFF',
         flex:1,
     },
+    InputData: {
+        height: 40,
+        width: '85%',
+        borderColor: 'gray',
+        borderWidth: 1,
+        borderRadius: 10,
+        padding: 8,
+        marginBottom: 10, 
+    },
+    InputData2: {
+        height: 40,
+        width: '75%',
+        borderColor: 'gray',
+        borderWidth: 1,
+        borderRadius: 10,
+        padding: 8,
+    },
+
 
 
     //Specifics
@@ -55,6 +80,7 @@ export const globalStyles =  StyleSheet.create({
         borderRadius: 10,
         flexDirection: 'row',
         justifyContent: 'space-between',
+        alignItems: 'center',
         marginBottom: 35,
     },
     Registrar: {
@@ -63,10 +89,21 @@ export const globalStyles =  StyleSheet.create({
         width: '80%',
         borderRadius: 10,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    Registrar2: {
+        marginTop: 45,
+        backgroundColor: '#00C65E',
+        padding: 15,
+        width: '50%',
+        borderRadius: 10,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     LogOut: {
-        backgroundColor: '#FF0000',
+        backgroundColor: '#fe1604',
         padding: 15,
         width: '50%',
         borderRadius: 10,
@@ -76,25 +113,5 @@ export const globalStyles =  StyleSheet.create({
     logo: {
         width:200,
         height:200,
-    },
-    EMail: {
-        height: 40,
-        width: '85%',
-        borderColor: 'gray',
-        borderWidth: 1,
-        borderRadius: 10,
-        padding: 8,
-        marginBottom: 10, 
-    },
-    PassWord: {
-        height: 40,
-        width: '85%',
-        borderColor: 'gray',
-        borderWidth: 1,
-        borderRadius: 10,
-        padding: 8,
-        marginBottom: 10,
-
-
-    },
+    }
 });

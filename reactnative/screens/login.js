@@ -17,8 +17,8 @@ export default function LogIn({navigation}){
       {//<Text style={globalStyles.titleText}>Pantalla de LogIn</Text>
        //<Text style={globalStyles.subtitleText}>LogIn</Text>
       }
-      <TextInput style={globalStyles.EMail} placeholder= 'Correo electrónico' /*value = "email" onChangeText={setEmail}*/ />
-      <TextInput style={globalStyles.PassWord} placeholder= 'Contraseña' /*value = "password" onChangeText={setPassword}*/ secureTextEntry/>
+      <TextInput style={globalStyles.InputData} placeholder= 'Correo electrónico' /*value = "email" onChangeText={setEmail}*/ />
+      <TextInput style={globalStyles.InputData} placeholder= 'Contraseña' /*value = "password" onChangeText={setPassword}*/ secureTextEntry/>
 
       {/*<TouchableOpacity style={globalStyles.Ingresar} onPress={() => signIn({email, password})}>*/}
       <TouchableOpacity style={globalStyles.Ingresar} onPress={() => navigation.push("HomeStack")}>
