@@ -1,8 +1,13 @@
-import React, {Component} from 'react';
+import React, { useState, Component } from 'react';
 import { View, Text, TouchableOpacity, Image, TextInput} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { globalStyles } from '../styles/global';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+
+//const [email, setEmail] = React.useState('');
+//const [password, setPassword] = React.useState('');
+
+//const { signIn } = React.useContext(AuthContext);
 
 export default function LogIn({navigation}){
   return(
@@ -12,9 +17,10 @@ export default function LogIn({navigation}){
       {//<Text style={globalStyles.titleText}>Pantalla de LogIn</Text>
        //<Text style={globalStyles.subtitleText}>LogIn</Text>
       }
-      <TextInput>Correo Electrónico</TextInput>
-      <TextInput>Contraseña</TextInput>
+      <TextInput style={globalStyles.EMail} placeholder= 'Correo electrónico' /*value = "email" onChangeText={setEmail}*/ />
+      <TextInput style={globalStyles.PassWord} placeholder= 'Contraseña' /*value = "password" onChangeText={setPassword}*/ secureTextEntry/>
 
+      {/*<TouchableOpacity style={globalStyles.Ingresar} onPress={() => signIn({email, password})}>*/}
       <TouchableOpacity style={globalStyles.Ingresar} onPress={() => navigation.push("HomeStack")}>
         <Text style={globalStyles.subtitleText}>Iniciar sesión</Text>
         <Ionicons name="caret-forward-outline" size={20} color="black" />

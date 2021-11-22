@@ -13,7 +13,7 @@ export default function Cuenta({navigation}){
                 <Text style={globalStyles.subtitleText}>Editar Cuenta</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={globalStyles.Ingresar} onPress={() => navigation.popToTop()}>
+            <TouchableOpacity style={globalStyles.LogOut} onPress={() => navigation.popToTop()}>
                 <Text style={globalStyles.subtitleText}>LogOut</Text>
             </TouchableOpacity>
         </View>

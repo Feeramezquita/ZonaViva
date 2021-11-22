@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { AuthContext } from './authprovider';
+import * as SecureStore from 'expo-secure-store';
 
-import Routes from '../routes/routes';
 import Carrito from '../screens/carrito';
 import Catalogo from '../screens/catalogo';
 import Cuenta from '../screens/cuenta';
@@ -77,18 +78,51 @@ const AuthStackScreen = () => (
     </NavigationContainer>
 );
 
+//export default function LogInStack(){
+//
+//    const { user, login, logout } = useContext(AuthContext)
+//    const [loading, setloading] = useState(true);
+//
+//    useEffect(() => {
+//        SecureStore.getItemAsync('user')
+//        .then(userString => {
+//            if (userString) {
+//                login();
+//            }
+//            setloading(false);
+//        })
+//        .catch(err => {
+//            console.log(err);
+//        })
+//    }, []);
+//
+//    if(loading) {
+//        return (
+//            <Splash />
+//        )
+//    }
+//
+//    return(
+//            user ? TabsScreen() : AuthStackScreen()
+//    );
+//}
+
 export default function LogInStack(){
 
     const [isLoading, setIsLoading] = React.useState(true);
+    const [user, setUser] = React.useState(null);
 
     React.useEffect(() => {
         setTimeout(() => {
-            setIsLoading(false);
-        }, 1000)
+            setIsLoading(!isLoading);
+            setUser({});
+        }, 500);
     }, []);
 
     if (isLoading) {
-        return <Splash />
+        return ( 
+            <Splash />
+        )
     }
 
     return(
@@ -100,5 +134,5 @@ export default function LogInStack(){
         //        <AuthStack.Screen name="Registrar" component={Registrar} options={{title: 'Creando cuenta nueva'}}/>
         //    </AuthStack.Navigator>
         //</NavigationContainer>
-    );
+    );   
 }

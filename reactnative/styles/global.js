@@ -54,7 +54,8 @@ export const globalStyles =  StyleSheet.create({
         width: '90%',
         borderRadius: 10,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        marginBottom: 10,
     },
     Registrar: {
         backgroundColor: '#FFA400',
@@ -64,8 +65,36 @@ export const globalStyles =  StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
+    LogOut: {
+        backgroundColor: '#FF0000',
+        padding: 15,
+        width: '50%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     logo: {
         width:200,
         height:200,
-    }
+    },
+    EMail: {
+        height: 40,
+        width: '85%',
+        borderColor: 'gray',
+        borderWidth: 1,
+        borderRadius: 10,
+        padding: 8,
+        marginBottom: 10, 
+    },
+    PassWord: {
+        height: 40,
+        width: '85%',
+        borderColor: 'gray',
+        borderWidth: 1,
+        borderRadius: 10,
+        padding: 8,
+        marginBottom: 10,
+
+
+    },
 });
