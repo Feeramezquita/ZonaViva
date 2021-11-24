@@ -36,7 +36,7 @@ const ProductStackScreen = () => (
 const CarritoStackScreen = () => (
     <CarritoStack.Navigator>
         <CarritoStack.Screen name="Carrito" component={Carrito} options={{headerShown: false}}/>
-        <CarritoStack.Screen name="Pago" component={Pago} options={{title: 'Pagar'}}/>
+        <CarritoStack.Screen name="Pago" component={Pago} options={{title: 'Pagando carrito'}}/>
     </CarritoStack.Navigator>    
 );
 

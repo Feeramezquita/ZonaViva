@@ -23,6 +23,16 @@ export const globalStyles =  StyleSheet.create({
         padding: 1,
         marginBottom: 50, 
     },
+    containercard2: {
+        width: '90%',
+        borderColor: '#eee',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 1,
+        borderRadius: 5,
+        padding: 1,
+        //marginBottom: 50, 
+    },
     icon_imput: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -30,6 +40,12 @@ export const globalStyles =  StyleSheet.create({
         marginBottom: 10,
     },
     icon_text: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
+    Image_text: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -57,11 +73,29 @@ export const globalStyles =  StyleSheet.create({
         color: '#333',
         marginBottom: 10,
     },
+    microTitle: {
+        fontFamily: 'PS-Bold',
+        fontSize: 20,
+        color: '#333',
+        marginBottom: 15,
+    },
+    microTitle2: {
+        fontFamily: 'PS-Bold',
+        fontSize: 20,
+        color: '#333',
+        //marginBottom: 5,
+    },
     paragraph: {
         fontFamily: 'PS-Regular',
         marginVertical: 5,
         lineHeight: 20,
         fontSize: 20,
+    },
+    smallParagraph: {
+        fontFamily: 'PS-Regular',
+        marginVertical: 5,
+        lineHeight: 20,
+        fontSize: 15,
     },
     inputContainer: {
         borderBottomColor: '#F5FCFF',
@@ -97,7 +131,9 @@ export const globalStyles =  StyleSheet.create({
         borderRadius: 10,
         padding: 8,
     },
-
+    scroll:{
+        marginTop: '6%',
+    },
 
 
     //Specifics
@@ -148,6 +184,22 @@ export const globalStyles =  StyleSheet.create({
         alignItems: 'center',
         marginBottom: 10,
     },
+    Add: {
+        padding: 1,
+        width: 40,
+        borderRadius: 5,
+        //justifyContent: 'space-between',
+        alignItems: 'center',
+        //marginBottom: 10,
+    },
+    Trash: {
+        padding: 1,
+        width: 40,
+        borderRadius: 5,
+        //justifyContent: 'space-between',
+        alignItems: 'center',
+        //marginBottom: 10,
+    },
     LogOut: {
         backgroundColor: '#fe1604',
         padding: 15,
@@ -156,8 +208,28 @@ export const globalStyles =  StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    Pago: {
+        backgroundColor: '#00C65E',
+        padding: 10,
+        width: '35%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    ConfirmarPago: {
+        backgroundColor: '#FFA400',
+        padding: 10,
+        width: '35%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     logo: {
         width:200,
         height:200,
+    },
+    Payment: {
+        width:75,
+        height:75,
     }
 });
