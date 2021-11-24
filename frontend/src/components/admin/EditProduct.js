@@ -3,32 +3,30 @@ import { Link, useHistory } from 'react-router-dom';
 import '../admin/styles/AddProduct.css';
 import axios from 'axios';
 
-
 function EditProduct(props) {
-    const [producto, setProducto] = useState([]);
+    const [productos, setProductos] = useState([]);
     const product_id = props.match.params.id;
     const history = useHistory();
     const [name, setName] = useState("");
-    const [price, setPrice] = useState("");
+    const [price, setPrice] = useState('');
     const [qty, setQty] = useState("");
     const [description, setDescription] = useState("");
-
+    
     useEffect(() => {
         axios.get(`/api/admin/editProduct/${product_id}`).then(response => {
             if (response.data.status === 200) {
-                // console.log(response.data.item);
-                // console.log(response.data.producto);
-                setProducto(response.data.item);
-                setProducto(response.data.producto);
-                setProducto(response.data);
 
-                
+                const producto = response.data.producto;
+                const item = response.data.item;
 
+                setName(item.nombre_item);
+                setPrice(item.cuota_recuperacion);
+                setQty(producto.num_productos);
+                setDescription(item.descripcion_item);
+                // console.log(item.nombre_item);
             }
-    
         });
     }, []);
-    
 
     function handleInputName(event) {
         setName(event.target.value);
@@ -36,7 +34,6 @@ function EditProduct(props) {
     function handleInputPrice(event) {
         setPrice(event.target.value);
     }
-
     function handleInputQty(event) {
         setQty(event.target.value);
     }
@@ -68,7 +65,7 @@ function EditProduct(props) {
                         <h4> Editar Producto
                         </h4>
                     </div>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} enctype="multipart/form-data">
                         <div className="card-body ">
                             <div className="form-group">
                                 <label>Nombre</label>
@@ -76,25 +73,25 @@ function EditProduct(props) {
                                     type="name"
                                     className="form-control"
                                     id="nombreProducto"
-                                    required 
-                                    value={producto.nombre_item}
+                                    required
+                                    value={name}
                                     onChange={handleInputName}
+
                                 />
                             </div>
                             <div className="form-group">
                                 <label>Precio</label>
                                 <div className="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">$</span>
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text">$</span>
                                     </div>
                                     <input
                                         type="number"
                                         step="0.01"
-                                        class="form-control"
-                                        aria-label="Amount (to the nearest dollar)"
+                                        className="form-control"
                                         required
+                                        value={price}
                                         onChange={handleInputPrice}
-                                        value={producto.cuota_recuperacion}
                                     />
                                 </div>
                             </div>
@@ -102,10 +99,10 @@ function EditProduct(props) {
                                 <label htmlFor="exampleFormControlSelect2">Cantidad</label>
                                 <input
                                     type="number"
-                                    class="form-control"
+                                    className="form-control"
                                     required
+                                    value={qty}
                                     onChange={handleInputQty}
-                                    value={producto.num_productos}
                                 />
                             </div>
                             <div className="form-group">
@@ -114,8 +111,8 @@ function EditProduct(props) {
                                     className="form-control"
                                     id="exampleFormControlTextarea1"
                                     required
+                                    value={description}
                                     onChange={handleInputDescription}
-                                    value = {producto.descripcion_item}
                                 />
                             </div>
                             <div className="form-group archivo">
@@ -138,6 +135,7 @@ function EditProduct(props) {
                 </div>
             </div>
         </div>
+
     )
 }
 

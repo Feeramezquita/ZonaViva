@@ -25,7 +25,7 @@ function Producto(props) {
                 <Link to={`/admin/EditProduct/${props.id}`} className="btn btn-success btn-sm">Editar</Link>
             </td>
             <td>
-                <button onClick={(event) => deleteProduct(event, props.id)} className="btn btn-danger btn-sm">Eliminar</button>
+                <button onClick={(event) => deleteProduct(event, props.id)} data-toggle="modal" data-target="#confirm-delete" className="btn btn-danger btn-sm">Eliminar</button>
             </td>
         </tr>
     )

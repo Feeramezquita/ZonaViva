@@ -100,15 +100,10 @@ class ItemController extends Controller
         $item->nombre_item = $request->input('name');
         $item->cuota_recuperacion = $request->input('price');
         $item->descripcion_item = $request->input('description');
-        
-        // if ($item->save()) {
-        //     Producto::create([
-        //         'id_item' => $item->id_item,
-        //         'num_productos' => $request->qty,
-        //         'cantidad_producto' => "",
-        //     ]);
-        // }
-        // return $request -> all();
+        $producto = Producto::find($id);
+        $producto->num_productos = $request->input('qty');
+        $item->update();
+        $producto->update();
     }
 
     /**
