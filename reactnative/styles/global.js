@@ -4,12 +4,32 @@ import { StyleSheet } from "react-native";
 export const globalStyles =  StyleSheet.create({
     container: {
         flex: 1,
-        padding: 5,
+        padding: 3,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#fff',
     },
-    container2: {
+    containerIn: {
+        flex: 1,
+        padding: 3,
+        justifyContent: 'center',
+    },
+    containercard: {
+        width: '85%',
+        borderColor: '#eee',
+        alignItems: 'center',
+        borderWidth: 1,
+        borderRadius: 5,
+        padding: 1,
+        marginBottom: 50, 
+    },
+    icon_imput: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
+    icon_text: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -31,9 +51,17 @@ export const globalStyles =  StyleSheet.create({
         fontSize: 20,
         color: '#fff',
     },
+    miniTitle: {
+        fontFamily: 'PS-Bold',
+        fontSize: 25,
+        color: '#333',
+        marginBottom: 10,
+    },
     paragraph: {
-        marginVertical: 8,
+        fontFamily: 'PS-Regular',
+        marginVertical: 5,
         lineHeight: 20,
+        fontSize: 20,
     },
     inputContainer: {
         borderBottomColor: '#F5FCFF',
@@ -101,6 +129,24 @@ export const globalStyles =  StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    Registrar3: {
+        marginTop: 20,
+        backgroundColor: '#009CDE',
+        padding: 15,
+        width: '80%',
+        borderRadius: 10,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    Editar: {
+        padding: 1,
+        width: 40,
+        borderRadius: 5,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
     },
     LogOut: {
         backgroundColor: '#fe1604',

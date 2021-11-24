@@ -11,25 +11,26 @@ export default function Registrar({navigation}){
             console.log('dismissed keyboard')
         }} >
             <View style={globalStyles.container}>
+                <StatusBar style="auto" />
                 <Text style={globalStyles.titleText}>Bienvenido a ZonaViva</Text>
 
-                <View style={globalStyles.container2}>
+                <View style={globalStyles.icon_imput}>
                     <Ionicons name="at" size={20} color="black" />
                     <TextInput style={globalStyles.InputData2} placeholder= 'Nombre de Usuario' />    
                 </View>
-                <View style={globalStyles.container2}>
+                <View style={globalStyles.icon_imput}>
                     <Ionicons name="person" size={20} color="black" />
                     <TextInput style={globalStyles.InputData2} placeholder= 'Nombre y Apellidos' />    
                 </View>
-                <View style={globalStyles.container2}>
+                <View style={globalStyles.icon_imput}>
                     <Ionicons name="mail" size={20} color="black" />
                     <TextInput style={globalStyles.InputData2} placeholder= 'Correo Electrónico' />    
                 </View>
-                <View style={globalStyles.container2}>
+                <View style={globalStyles.icon_imput}>
                     <Ionicons name="key" size={20} color="black" />
                     <TextInput style={globalStyles.InputData2} placeholder= 'Contraseña' secureTextEntry/>    
                 </View>
-                <View style={globalStyles.container2}>
+                <View style={globalStyles.icon_imput}>
                     <Ionicons name="add" size={20} color="black" />
                     <TextInput style={globalStyles.InputData2} placeholder= 'Edad' keyboardType={'numeric'}/>    
                 </View>

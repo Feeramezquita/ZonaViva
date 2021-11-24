@@ -19,9 +19,6 @@ import Pago from '../screens/pago';
 import Registrar from '../screens/registrar';
 import Splash from '../screens/splash'
 
-
-import { globalStyles } from '../styles/global';
-
 const AuthStack =  createNativeStackNavigator();
 const Tabs =  createBottomTabNavigator();
 const ProductStack = createNativeStackNavigator();
@@ -53,8 +50,7 @@ const HistStackScreen = () => (
 const CuentaStackScreen = () => (
     <CuentaStack.Navigator>
         <CuentaStack.Screen name="Account" component={Cuenta} options={{headerShown: false}}/>
-        <CuentaStack.Screen name="Editar" component={EdiCuenta} options={{title: 'Editar Cuenta'}}/>
-        {/*<CuentaStack.Screen name="LogOut" component={AuthStackScreen} />*/}
+        <CuentaStack.Screen name="Editar" component={EdiCuenta} options={{title: 'Editando cuenta'}}/>
     </CuentaStack.Navigator>
 );
 
