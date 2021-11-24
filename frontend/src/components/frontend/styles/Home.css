@@ -1,6 +1,6 @@
 #imagen1{
     height: 600px;
-    background-image: url(https://static.wixstatic.com/media/2d47c8_3e85fc499fad4accaaa8cc1ec838171c~mv2.png/v1/fill/w_1851,h_700,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01/2d47c8_3e85fc499fad4accaaa8cc1ec838171c~mv2.webp);
+    background-image: url("../imagenes/Portada.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,7 +8,7 @@
 
 #imagen2{
     height: 600px;
-    background-image: url(https://static.wixstatic.com/media/2d47c8_7a568b7bf27a47e48c23f4c438d34e23~mv2.png/v1/fill/w_1851,h_700,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01/2d47c8_7a568b7bf27a47e48c23f4c438d34e23~mv2.webp);
+    background-image: url("../imagenes/foto1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +29,7 @@
 }
 
 .cursos{
-    background-image: url(https://static.wixstatic.com/media/2d47c8_a54bf0f85e5a4cfeb758e0a38d949747~mv2.jpg/v1/fill/w_1851,h_1000,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01/2d47c8_a54bf0f85e5a4cfeb758e0a38d949747~mv2.webp);
+    background-image: url("../imagenes/ZonaViva.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,4 +51,9 @@
     background-color: green;
     border-radius: 6px;
     border: 2px solid black;
+}
+
+.imagenes_carrusel{
+    width: 300px;
+    height: 300px;
 }
