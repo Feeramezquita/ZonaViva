@@ -28,7 +28,7 @@ class ItemController extends Controller
     public function store(Request $request)
     {
 
-       
+
         $item = new Item;
         $item->nombre_item = $request->input('name');
         $item->cuota_recuperacion = $request->input('price');
@@ -54,7 +54,26 @@ class ItemController extends Controller
         //     'message' => 'no es posible'
         // ]);
         // return $request -> all();
-        // echo('hola');
+    }
+
+    public function edit($id)
+    {
+        $item = Item::find($id);
+        $producto = Producto::find($id);
+
+        if ($item) {
+            return response()->json([
+                'status' => 200,
+                'item' => $item,
+                'producto' => ($producto)
+            ]);
+        } else {
+            return response()->json([
+                'status' => 404,
+                'message' => 'no es posible'
+            ]);
+        }
+
     }
 
     /**
@@ -75,9 +94,21 @@ class ItemController extends Controller
      * @para m  \App\Models\Item  $item
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Item $item)
+    public function update($id, Request $request)
     {
-        //
+        $item = Item::find($id);
+        $item->nombre_item = $request->input('name');
+        $item->cuota_recuperacion = $request->input('price');
+        $item->descripcion_item = $request->input('description');
+        
+        // if ($item->save()) {
+        //     Producto::create([
+        //         'id_item' => $item->id_item,
+        //         'num_productos' => $request->qty,
+        //         'cantidad_producto' => "",
+        //     ]);
+        // }
+        // return $request -> all();
     }
 
     /**
@@ -86,8 +117,9 @@ class ItemController extends Controller
      * @param  \App\Models\Item  $item
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Item $item)
+    public function destroy($id)
     {
-        //
+        $item = Item::find($id);
+        $item->delete();
     }
 }
