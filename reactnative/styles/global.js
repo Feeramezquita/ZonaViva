@@ -69,8 +69,7 @@ export const globalStyles =  StyleSheet.create({
         borderRadius: 10,
         padding: 8,
     },
-
-
+    
 
     //Specifics
     Ingresar: {
@@ -113,5 +112,80 @@ export const globalStyles =  StyleSheet.create({
     logo: {
         width:200,
         height:200,
-    }
+    },
+    imagenesHome1:{
+        width:400,
+        height:400,
+        flex: 1,
+        justifyContent: "center"  
+    },
+    
+    imagenesHome2:{
+        width:400,
+        height:400,
+        flex: 2,
+        justifyContent: "center"  
+    },
+    imagenesequipo1:{
+        width:200,
+        height:200,
+        marginHorizontal:"25%",
+    },
+    imagenesequipo2:{
+        width:200,
+        height:200,
+        marginHorizontal:"25%",
+    },
+    imagenesequipo3:{
+        width:200,
+        height:200,
+        marginHorizontal:"25%",
+    },
+    imagenesequipo4:{
+        width:200,
+        height:200,
+        marginHorizontal:"25%",
+    },
+    imagenesequipo5:{
+        width:200,
+        height:200,
+        marginHorizontal:"25%",
+    },
+    imagenesequipo6:{
+        width:200,
+        height:200,
+        marginHorizontal:"25%",
+    },
+    imagenesHome3:{
+        width:400,
+        height:400,
+        flex: 9,
+        justifyContent: "center"  
+    },
+    cuadroTexto:{
+        backgroundColor:"#228B22",
+        width:400,
+        height:650,
+        
+    },
+    titulosHome:{
+        color:"#ffffff",
+        textAlign:"center",
+        fontFamily: 'PS-Bold',
+        fontSize: 30,
+        marginBottom: 15,
+    },
+    parrafosHome:{
+        color:"#ffffff",
+        textAlign:"justify",
+        padding:10,
+        marginHorizontal:10,
+        fontSize: 20,
+    },
+    
+    integrantes:{
+        backgroundColor:"#228B22",
+        width:400,
+        height:2450,
+    },
 });
