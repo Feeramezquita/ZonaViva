@@ -4,15 +4,11 @@ import '../admin/styles/AddProduct.css';
 import axios from 'axios';
 
 
-function EditProduct() {
-    const [producto, setProducto] = useState([]);
-    useEffect(() => {
-        axios.get('/api/admin/productos')
-            .then(response => { setProducto(response.data) });
-    }, []);
+function EditProduct(props) {
 
-    const productoLista = producto.map(producto => {
-
+    const product_id = props.match.params.id;
+    axios.get(`/api/admin/editarProductos/${product_id}`).then(res => {
+        console.log(res.data.item);
     });
     return (
         <div>

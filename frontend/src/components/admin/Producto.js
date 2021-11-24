@@ -10,7 +10,7 @@ function Producto(props) {
             <td>{props.precio}</td>
             <td>{props.cantidad}</td>
             <td>
-                <Link to="/admin/EditProduct" className="btn btn-success btn-sm">Editar</Link>
+                <Link to={`/admin/EditProduct/${props.id}`} className="btn btn-success btn-sm">Editar</Link>
             </td>
             <td>
                 <Link to="#" className="btn btn-danger btn-sm">Eliminar</Link>
