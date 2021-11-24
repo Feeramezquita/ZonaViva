@@ -59,6 +59,7 @@ function AddProduct() {
                                 id="nombreProducto"
                                 placeholder="Nombre del producto"
                                 name="name"
+                                required
                                 onChange={handleInputName}
                                 value={name}
                             />
@@ -70,16 +71,15 @@ function AddProduct() {
                                     <span class="input-group-text">$</span>
                                 </div>
                                 <input
-                                    type="text"
+                                    type="number"
+                                    step="0.1"
                                     class="form-control"
                                     aria-label="Amount (to the nearest dollar)"
                                     name="price"
+                                    required
                                     onChange={handleInputPrice}
                                     value={price}
                                 />
-                                <div class="input-group-append">
-                                    <span class="input-group-text">.00</span>
-                                </div>
                             </div>
                         </div>
                         <div className="form-group">
@@ -88,6 +88,7 @@ function AddProduct() {
                                 type="number"
                                 class="form-control"
                                 name="qty"
+                                required
                                 onChange={handleInputQty}
                                 value={qty}
                             />
@@ -99,6 +100,7 @@ function AddProduct() {
                                 id="exampleFormControlTextarea1"
                                 rows={3}
                                 name="description"
+                                required
                                 onChange={handleInputDescription}
                                 value={description}
                             />

@@ -6,8 +6,7 @@ import Producto from './Producto';
 function Productos() {
     const [productos, setProductos] = useState([]);
     useEffect(() => {
-        axios.get('/api/admin/productos')
-            .then(response => { setProductos(response.data) });
+        axios.get('/api/admin/productos').then(response => { setProductos(response.data) });
     }, []);
 
     const productosLista = productos.map(producto => {

@@ -1,15 +1,65 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import '../admin/styles/AddProduct.css';
 import axios from 'axios';
 
 
 function EditProduct(props) {
-
+    const [producto, setProducto] = useState([]);
     const product_id = props.match.params.id;
-    axios.get(`/api/admin/editarProductos/${product_id}`).then(res => {
-        console.log(res.data.item);
-    });
+    const history = useHistory();
+    const [name, setName] = useState("");
+    const [price, setPrice] = useState("");
+    const [qty, setQty] = useState("");
+    const [description, setDescription] = useState("");
+
+    useEffect(() => {
+        axios.get(`/api/admin/editProduct/${product_id}`).then(response => {
+            if (response.data.status === 200) {
+                // console.log(response.data.item);
+                // console.log(response.data.producto);
+                setProducto(response.data.item);
+                setProducto(response.data.producto);
+                setProducto(response.data);
+
+                
+
+            }
+    
+        });
+    }, []);
+    
+
+    function handleInputName(event) {
+        setName(event.target.value);
+    }
+    function handleInputPrice(event) {
+        setPrice(event.target.value);
+    }
+
+    function handleInputQty(event) {
+        setQty(event.target.value);
+    }
+
+    function handleInputDescription(event) {
+        setDescription(event.target.value);
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        console.log(name, price, qty, description);
+        axios.post(`/api/admin/updateProduct/${product_id}`,
+            {
+                name,
+                price,
+                qty,
+                description
+            })
+            .then(response => {
+                console.log(response)
+                history.push('/admin/productos');
+            })
+    }
     return (
         <div>
             <div className="container px-4 " >
@@ -18,7 +68,7 @@ function EditProduct(props) {
                         <h4> Editar Producto
                         </h4>
                     </div>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className="card-body ">
                             <div className="form-group">
                                 <label>Nombre</label>
@@ -26,7 +76,9 @@ function EditProduct(props) {
                                     type="name"
                                     className="form-control"
                                     id="nombreProducto"
-                                    placeholder=""
+                                    required 
+                                    value={producto.nombre_item}
+                                    onChange={handleInputName}
                                 />
                             </div>
                             <div className="form-group">
@@ -36,13 +88,14 @@ function EditProduct(props) {
                                         <span class="input-group-text">$</span>
                                     </div>
                                     <input
-                                        type="text"
+                                        type="number"
+                                        step="0.01"
                                         class="form-control"
                                         aria-label="Amount (to the nearest dollar)"
+                                        required
+                                        onChange={handleInputPrice}
+                                        value={producto.cuota_recuperacion}
                                     />
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
                                 </div>
                             </div>
                             <div className="form-group">
@@ -50,14 +103,19 @@ function EditProduct(props) {
                                 <input
                                     type="number"
                                     class="form-control"
+                                    required
+                                    onChange={handleInputQty}
+                                    value={producto.num_productos}
                                 />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="exampleFormControlTextarea1">Descripción</label>
-                                <textarea
+                                <input
                                     className="form-control"
                                     id="exampleFormControlTextarea1"
-                                    rows={3}
+                                    required
+                                    onChange={handleInputDescription}
+                                    value = {producto.descripcion_item}
                                 />
                             </div>
                             <div className="form-group archivo">
@@ -70,7 +128,7 @@ function EditProduct(props) {
                         </div>
                         <div className="card-footer">
                             <div className="form-row">
-                                <Link to="/admin/Productos" className="btn btn-success btn-sm mr-1 botones"> Editar</Link>
+                                <button type="submit" className="btn btn-success btn-sm mr-1 botones"> Editar</button>
                                 <Link to="/admin/Productos" className="btn btn-danger btn-sm botones"> Cancelar</Link>
                             </div>
 
