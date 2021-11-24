@@ -16,7 +16,7 @@ class CreateImagenItemTable extends Migration
         Schema::create('imagen_item', function (Blueprint $table) {
             $table->id('id_imagen');
             $table->foreignId('id_item');
-            $table->binary('imagen_item');
+            $table->string('imagen_link');
 
             $table->foreign('id_item')->references('id_item')->on('item')
             ->onUpdate('cascade')

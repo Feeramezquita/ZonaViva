@@ -11,8 +11,8 @@ const Navbar = () => {
             
             <form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div className="input-group">
-                    <input className="form-control" type="text" placeholder="Buscar..." aria-label="Buscar..." aria-describedby="btnNavbarSearch" />
-                    <button className="btn btn-primary" id="btnNavbarSearch" type="button"><i className="fas fa-search"></i></button>
+                    {/* <input className="form-control" type="text" placeholder="Buscar..." aria-label="Buscar..." aria-describedby="btnNavbarSearch" />
+                    <button className="btn btn-primary" id="btnNavbarSearch" type="button"><i className="fas fa-search"></i></button> */}
                 </div>
             </form>
             
@@ -20,8 +20,8 @@ const Navbar = () => {
                 <li className="nav-item dropdown">
                     <Link to="#" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-user fa-fw"></i></Link>
                     <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><Link className="dropdown-item" to="#!">Perfil</Link></li>
-                        <li><hr className="dropdown-divider" /></li>
+                        {/* <li><Link className="dropdown-item" to="#!">Perfil</Link></li>
+                        <li><hr className="dropdown-divider" /></li> */}
                         <li><Link className="dropdown-item" to="#!">Logout</Link></li>
                     </ul>
                 </li>
