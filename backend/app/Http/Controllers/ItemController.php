@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Item;
+use App\Models\Producto;
 use Illuminate\Http\Request;
 
 class ItemController extends Controller
@@ -26,6 +27,34 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
+
+       
+        $item = new Item;
+        $item->nombre_item = $request->input('name');
+        $item->cuota_recuperacion = $request->input('price');
+        $item->descripcion_item = $request->input('description');
+
+
+
+
+        if ($item->save()) {
+            Producto::create([
+                'id_item' => $item->id_item,
+                'num_productos' => $request->qty,
+                'cantidad_producto' => "",
+            ]);
+            // return response()->json([
+            //     'status' => 200,
+            //     'message' => '¡Producto añadido!'
+            // ]);
+        }
+
+        // return response()->json([
+        //     'status' => 404,
+        //     'message' => 'no es posible'
+        // ]);
+        // return $request -> all();
+        // echo('hola');
     }
 
     /**

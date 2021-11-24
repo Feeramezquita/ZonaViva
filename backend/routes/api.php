@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ItemController;  
+use App\Http\Controllers\ItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResources([
-    '/admin/productos' => ItemController::class, 
-]);
+// Products
+Route::get('/admin/productos', [ItemController::class, 'index']);
+Route::post('/admin/anadirProductos', [ItemController::class, 'store']);
