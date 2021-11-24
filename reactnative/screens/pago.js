@@ -39,12 +39,8 @@ export default function Pago({navigation}){
                         <Ionicons name="list" size={20} color="green" />
                         <Text style={globalStyles.smallParagraph}> Nombre del producto x Cantidad = $$$.$$</Text>    
                     </View>
-
-                    <View style={globalStyles.icon_text}>
-                        <Ionicons name="cash" size={20} color="green" />
-                        <Text style={globalStyles.paragraph}> TOTAL = $$$.$$</Text>    
-                    </View>
                 </View>
+                
                 <CheckBox
                     center
                     title='Envío a domicilio?'
@@ -59,22 +55,25 @@ export default function Pago({navigation}){
                         <View style={globalStyles.container}>
                             <View style={globalStyles.icon_imput}>
                                 <Ionicons name="compass" size={20} color="green" />
-                                <TextInput style={globalStyles.InputData2} placeholder= 'Dirección' />    
+                                <TextInput multiline style={globalStyles.InputData2} placeholder= 'Dirección' />    
                             </View>
                             <View style={globalStyles.icon_imput}>
                                 <Ionicons name="star" size={20} color="green" />
-                                <TextInput style={globalStyles.InputData2} placeholder= 'Instrucciones especiales' />    
+                                <TextInput multiline style={globalStyles.InputData2} placeholder= 'Instrucciones especiales' />    
                             </View>
                             <View style={globalStyles.icon_text}>
                                 <Ionicons name="cash" size={20} color="green" />
-                                <Text style={globalStyles.paragraph}> $50 de envio por compras menores </Text>    
+                                <Text style={globalStyles.paragraph}> + $50 de envio</Text>    
                             </View>
                         </View> 
                     </TouchableWithoutFeedback>:
                     <Text style={globalStyles.smallParagraph}>Sus productos deberán de ser recogidos en la sucursal =D</Text>
                 }
             </ScrollView>
-
+            <View style={globalStyles.icon_text}>
+                <Ionicons name="cash" size={20} color="green" />
+                <Text style={globalStyles.paragraph}> TOTAL = $$$.$$</Text>    
+            </View>
             <TouchableOpacity style={globalStyles.ConfirmarPago} onPress={() => navigation.navigate("Carrito")}>
                 <Text style={globalStyles.subtitleText}>Finalizar</Text>
             </TouchableOpacity>

@@ -4,7 +4,7 @@ import { StyleSheet } from "react-native";
 export const globalStyles =  StyleSheet.create({
     container: {
         flex: 1,
-        padding: 3,
+        padding: 2,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#fff',
@@ -45,6 +45,17 @@ export const globalStyles =  StyleSheet.create({
         alignItems: 'center',
         marginBottom: 10,
     },
+    icon_text2: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: '#009CDE',
+        width: '50%',
+        borderRadius: 10,
+        padding: 2,
+        paddingLeft: 10,
+        paddingRight: 10,
+    },
     Image_text: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -61,6 +72,12 @@ export const globalStyles =  StyleSheet.create({
         fontSize: 30,
         color: '#333',
         marginBottom: 15,
+    },
+    titleTextHeader: {
+        fontFamily: 'PS-Bold',
+        fontSize: 30,
+        color: '#333',
+        marginTop: '4%',
     },
     subtitleText: {
         fontFamily: 'PS-SemiBold',
@@ -96,6 +113,11 @@ export const globalStyles =  StyleSheet.create({
         marginVertical: 5,
         lineHeight: 20,
         fontSize: 15,
+    },
+    normalText: {
+        fontFamily: 'PS-Regular',
+        fontSize: 15,
+         color: '#000',
     },
     inputContainer: {
         borderBottomColor: '#F5FCFF',
@@ -218,6 +240,14 @@ export const globalStyles =  StyleSheet.create({
     },
     ConfirmarPago: {
         backgroundColor: '#FFA400',
+        padding: 10,
+        width: '35%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    Regresar: {
+        backgroundColor: '#00C65E',
         padding: 10,
         width: '35%',
         borderRadius: 10,

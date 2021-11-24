@@ -16,11 +16,11 @@ export default function Carrito({navigation}){
                         <Text style={globalStyles.microTitle2}>Producto Genérico - $<Text>200</Text></Text>
                         <View style={globalStyles.icon_imput}>
                             <TouchableOpacity style={globalStyles.Add}>
-                                <Ionicons name="add-circle-outline" size={35} color="black" />
+                                <Ionicons name="add-circle-outline" size={35} color="#009CDE" />
                             </TouchableOpacity>
                             <Text>15</Text>
                             <TouchableOpacity style={globalStyles.Trash}>
-                                <Ionicons name="trash" size={35} color="black" />
+                                <Ionicons name="trash" size={35} color="#fe1604" />
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -34,11 +34,11 @@ export default function Carrito({navigation}){
                         <Text style={globalStyles.microTitle2}>Producto Genérico - $<Text>200</Text></Text>
                         <View style={globalStyles.icon_imput}>
                             <TouchableOpacity style={globalStyles.Add}>
-                                <Ionicons name="add-circle-outline" size={35} color="black" />
+                                <Ionicons name="add-circle-outline" size={35} color="#009CDE" />
                             </TouchableOpacity>
                             <Text>15</Text>
                             <TouchableOpacity style={globalStyles.Trash}>
-                                <Ionicons name="trash" size={35} color="black" />
+                                <Ionicons name="trash" size={35} color="#fe1604" />
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -49,11 +49,11 @@ export default function Carrito({navigation}){
                         <Text style={globalStyles.microTitle2}>Producto Genérico - $<Text>200</Text></Text>
                         <View style={globalStyles.icon_imput}>
                             <TouchableOpacity style={globalStyles.Add}>
-                                <Ionicons name="add-circle-outline" size={35} color="black" />
+                                <Ionicons name="add-circle-outline" size={35} color="#009CDE" />
                             </TouchableOpacity>
                             <Text>15</Text>
                             <TouchableOpacity style={globalStyles.Trash}>
-                                <Ionicons name="trash" size={35} color="black" />
+                                <Ionicons name="trash" size={35} color="#fe1604" />
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -64,11 +64,11 @@ export default function Carrito({navigation}){
                         <Text style={globalStyles.microTitle2}>Producto Genérico - $<Text>200</Text></Text>
                         <View style={globalStyles.icon_imput}>
                             <TouchableOpacity style={globalStyles.Add}>
-                                <Ionicons name="add-circle-outline" size={35} color="black" />
+                                <Ionicons name="add-circle-outline" size={35} color="#009CDE" />
                             </TouchableOpacity>
                             <Text>15</Text>
                             <TouchableOpacity style={globalStyles.Trash}>
-                                <Ionicons name="trash" size={35} color="black" />
+                                <Ionicons name="trash" size={35} color="#fe1604" />
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -79,11 +79,11 @@ export default function Carrito({navigation}){
                         <Text style={globalStyles.microTitle2}>Producto Genérico - $<Text>200</Text></Text>
                         <View style={globalStyles.icon_imput}>
                             <TouchableOpacity style={globalStyles.Add}>
-                                <Ionicons name="add-circle-outline" size={35} color="black" />
+                                <Ionicons name="add-circle-outline" size={35} color="#009CDE" />
                             </TouchableOpacity>
                             <Text>15</Text>
                             <TouchableOpacity style={globalStyles.Trash}>
-                                <Ionicons name="trash" size={35} color="black" />
+                                <Ionicons name="trash" size={35} color="#fe1604" />
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -94,11 +94,11 @@ export default function Carrito({navigation}){
                         <Text style={globalStyles.microTitle2}>Producto Genérico - $<Text>200</Text></Text>
                         <View style={globalStyles.icon_imput}>
                             <TouchableOpacity style={globalStyles.Add}>
-                                <Ionicons name="add-circle-outline" size={35} color="black" />
+                                <Ionicons name="add-circle-outline" size={35} color="#009CDE" />
                             </TouchableOpacity>
                             <Text>15</Text>
                             <TouchableOpacity style={globalStyles.Trash}>
-                                <Ionicons name="trash" size={35} color="black" />
+                                <Ionicons name="trash" size={35} color="#fe1604" />
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -109,11 +109,11 @@ export default function Carrito({navigation}){
                         <Text style={globalStyles.microTitle2}>Producto Genérico - $<Text>200</Text></Text>
                         <View style={globalStyles.icon_imput}>
                             <TouchableOpacity style={globalStyles.Add}>
-                                <Ionicons name="add-circle-outline" size={35} color="black" />
+                                <Ionicons name="add-circle-outline" size={35} color="#009CDE" />
                             </TouchableOpacity>
                             <Text>15</Text>
                             <TouchableOpacity style={globalStyles.Trash}>
-                                <Ionicons name="trash" size={35} color="black" />
+                                <Ionicons name="trash" size={35} color="#fe1604" />
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -124,41 +124,11 @@ export default function Carrito({navigation}){
                         <Text style={globalStyles.microTitle2}>Producto Genérico - $<Text>200</Text></Text>
                         <View style={globalStyles.icon_imput}>
                             <TouchableOpacity style={globalStyles.Add}>
-                                <Ionicons name="add-circle-outline" size={35} color="black" />
+                                <Ionicons name="add-circle-outline" size={35} color="#009CDE" />
                             </TouchableOpacity>
                             <Text>15</Text>
                             <TouchableOpacity style={globalStyles.Trash}>
-                                <Ionicons name="trash" size={35} color="black" />
-                            </TouchableOpacity>
-                        </View>
-                    </View>
-                </View>
-                <View style={globalStyles.Image_text}>
-                    <Image style={globalStyles.Payment}  source={ require('../assets/img/products/kitplantulas.jpg')}/>
-                    <View style={globalStyles.container2}>
-                        <Text style={globalStyles.microTitle2}>Producto Genérico - $<Text>200</Text></Text>
-                        <View style={globalStyles.icon_imput}>
-                            <TouchableOpacity style={globalStyles.Add}>
-                                <Ionicons name="add-circle-outline" size={35} color="black" />
-                            </TouchableOpacity>
-                            <Text>15</Text>
-                            <TouchableOpacity style={globalStyles.Trash}>
-                                <Ionicons name="trash" size={35} color="black" />
-                            </TouchableOpacity>
-                        </View>
-                    </View>
-                </View>
-                <View style={globalStyles.Image_text}>
-                    <Image style={globalStyles.Payment}  source={ require('../assets/img/products/kitplantulas.jpg')}/>
-                    <View style={globalStyles.container2}>
-                        <Text style={globalStyles.microTitle2}>Producto Genérico - $<Text>200</Text></Text>
-                        <View style={globalStyles.icon_imput}>
-                            <TouchableOpacity style={globalStyles.Add}>
-                                <Ionicons name="add-circle-outline" size={35} color="black" />
-                            </TouchableOpacity>
-                            <Text>15</Text>
-                            <TouchableOpacity style={globalStyles.Trash}>
-                                <Ionicons name="trash" size={35} color="black" />
+                                <Ionicons name="trash" size={35} color="#fe1604" />
                             </TouchableOpacity>
                         </View>
                     </View>

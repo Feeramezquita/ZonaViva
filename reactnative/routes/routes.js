@@ -43,7 +43,7 @@ const CarritoStackScreen = () => (
 const HistStackScreen = () => (
     <HistStack.Navigator>
         <HistStack.Screen name="History" component={Historial} options={{headerShown: false}}/>
-        <HistStack.Screen name="DCompra" component={DCompra} options={{title: 'Detalles de Compra'}}/>
+        <HistStack.Screen name="DCompra" component={DCompra} options={{title: 'Detalles de compra'}}/>
     </HistStack.Navigator>
 );
 
