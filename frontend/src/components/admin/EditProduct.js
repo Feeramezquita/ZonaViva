@@ -115,13 +115,13 @@ function EditProduct(props) {
                                     onChange={handleInputDescription}
                                 />
                             </div>
-                            <div className="form-group archivo">
+                            {/* <div className="form-group archivo">
                                 <input
                                     type="file"
                                     className="form-control-file"
                                     id="exampleFormControlFile1"
                                 />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="card-footer">
                             <div className="form-row">

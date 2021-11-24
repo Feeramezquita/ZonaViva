@@ -105,20 +105,19 @@ function AddProduct() {
                                 value={description}
                             />
                         </div>
-                        <div className="form-group archivo">
+                        {/* <div className="form-group archivo">
                             <input
                                 type="file"
                                 className="form-control-file"
                                 id="exampleFormControlFile1"
                             />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="card-footer">
                         <div className="form-row">
                             <button type="submit" className="btn btn-primary btn-sm mr-1 botones"> Añadir</button>
                             <Link to="/admin/Productos" className="btn btn-danger btn-sm botones"> Cancelar</Link>
                         </div>
-
                     </div>
                 </form>
 
