@@ -18,7 +18,7 @@ const routes = [
     
     { path: '/admin/Usuarios', exact:true, name: 'Dashboard', component: Usuarios },
     { path: '/admin/AddUsuario', exact:true, name: 'Dashboard', component: AddUsuario },
-    { path: '/admin/EditUsuario', exact:true, name: 'Dashboard', component: EditUsuario }
+    { path: '/admin/EditUsuario/:id', exact:true, name: 'Dashboard', component: EditUsuario }
 
 
 
