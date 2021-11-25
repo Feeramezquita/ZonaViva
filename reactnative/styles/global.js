@@ -327,4 +327,54 @@ export const globalStyles =  StyleSheet.create({
     integrantes:{
         backgroundColor:"#228B22",
     },
+    productos:{
+        backgroundColor:"#ffffff",
+        borderRadius: 20,
+        marginHorizontal:"10%",
+        padding:10,
+        marginBottom:10
+    },
+    imagenproducto:{
+        width:200,
+        height:200,
+        marginBottom:10,
+        marginHorizontal:"15%"
+    },
+    detalles:{
+        backgroundColor: '#6B8E23',
+        width: '50%',
+        borderRadius: 10,
+        justifyContent: 'space-between',
+        marginBottom: 10,
+        marginHorizontal:"25%",
+        textAlign:"center"
+    },
+    parrafosbutum:{
+        color:"#000000",
+        textAlign:"center",
+        padding:5,
+        marginHorizontal:"3%",
+        fontSize: 20,
+    },
+    titlecatalogo:{
+        color:"#000000",
+        textAlign:"center",
+        fontFamily: 'PS-Bold',
+        fontSize: 30,
+        marginTop:"5%",
+        marginBottom: "3%",  
+        backgroundColor:"#ffffff",
+        padding:5,
+    }, 
+    containergreen:{
+        backgroundColor:"#228B22"
+    },
+    containerdetalles:{
+        flex: 1,
+        padding: 2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#228B22',
+    }
+    
 });
