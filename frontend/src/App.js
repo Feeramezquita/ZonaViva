@@ -12,6 +12,7 @@ import axios from 'axios';
 import Store from './components/frontend/Store';
 import Nosotros from './components/frontend/Nosotros';
 import Contactanos from './components/frontend/Contactanos';
+import Orden from './components/frontend/Orden';
 
 axios.defaults.baseURL = window.apiURL
 axios.defaults.headers.post['Content-Type'] = 'application/json';
@@ -50,6 +51,7 @@ function App() {
           <Route path="/contactanos" component={Contactanos} />
           <Route path="/store" component={Store} />
           <Route path="/admin" name="Admin" render={(props) => <MasterLayout {...props} />} />
+          <Route path="/orden" component={Orden} />
         </Switch>
       </Router>
     </div>
