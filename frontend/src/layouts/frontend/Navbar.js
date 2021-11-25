@@ -1,12 +1,7 @@
 import axios from 'axios';
 import React from 'react';
-<<<<<<< HEAD
-import {Link, useHistory} from 'react-router-dom';
-
+import { Link, useHistory } from 'react-router-dom';
 import swal from 'sweetalert';
-=======
-import { Link } from 'react-router-dom';
->>>>>>> develop
 
 function Navbar() {
 
@@ -55,15 +50,6 @@ function Navbar() {
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto">
-<<<<<<< HEAD
-                <li className="nav-item active">
-                    <Link className="nav-link" to="#">Home <span className="sr-only">(current)</span></Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="#">Collection</Link>
-                </li>
-                {AuthButtons}
-=======
                     <li className="nav-item active">
                         <Link className="nav-link" to="/home">Inicio <span className="sr-only">(current)</span></Link>
                     </li>
@@ -93,7 +79,6 @@ function Navbar() {
                             <li><Link className="dropdown-item" to="#!">Logout</Link></li>
                         </ul>
                     </li>
->>>>>>> develop
                 </ul>
             </div>
         </nav>

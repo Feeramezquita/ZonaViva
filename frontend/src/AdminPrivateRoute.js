@@ -33,7 +33,6 @@ function AdminPrivateRoute({...rest}){
     });
 
     axios.interceptors.response.use( undefined, function (error){
-
             if(error.response.status === 403){
                 swal("Forbidden", error.response.data.message, "warning");
                 history.push('/403');
