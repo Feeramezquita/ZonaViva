@@ -1,8 +1,10 @@
 import React from 'react';
 
 function Dashboard(){
+    
     return(
-        <h1>I am a Dashboard</h1>
+        <h1>Bienvenido al panel de Control de Zona Viva</h1>
+
     );
 }
 

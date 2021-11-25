@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\UserController;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +43,13 @@ Route::post('/admin/anadirProductos', [ItemController::class, 'store']);
 Route::delete('/admin/deleteProduct/{id}', [ItemController::class, 'destroy']);
 Route::get('/admin/editProduct/{id}', [ItemController::class, 'edit']);
 Route::post('/admin/updateProduct/{id}', [ItemController::class, 'update']);
+
+// Usuarios
+Route::get('/admin/usuarios', [UserController::class, 'index']);
+Route::post('/admin/anadirUsuarios', [UserController::class, 'store']);
+Route::delete('/admin/deleteUsuario/{id}', [UserController::class, 'destroy']);
+Route::get('/admin/editUsuario/{id}', [UserController::class, 'edit']);
+Route::post('/admin/updateUsuario/{id}', [UserController::class, 'update']);
+
+
 

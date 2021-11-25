@@ -11,7 +11,7 @@ function EditProduct(props) {
     const [price, setPrice] = useState('');
     const [qty, setQty] = useState("");
     const [description, setDescription] = useState("");
-    
+
     useEffect(() => {
         axios.get(`/api/admin/editProduct/${product_id}`).then(response => {
             if (response.data.status === 200) {
@@ -23,7 +23,8 @@ function EditProduct(props) {
                 setPrice(item.cuota_recuperacion);
                 setQty(producto.num_productos);
                 setDescription(item.descripcion_item);
-                // console.log(item.nombre_item);
+
+                // console.log(producto);
             }
         });
     }, []);
@@ -62,8 +63,7 @@ function EditProduct(props) {
             <div className="container px-4 " >
                 <div className="card tarjeta mt-4">
                     <div className="card-header">
-                        <h4> Editar Producto
-                        </h4>
+                        <h4> Editar Producto</h4>
                     </div>
                     <form onSubmit={handleSubmit} enctype="multipart/form-data">
                         <div className="card-body ">

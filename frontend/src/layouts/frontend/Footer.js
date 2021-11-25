@@ -7,11 +7,11 @@ const Footer = () => {
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; ZonaViva</div>
-                            <div>
+                            {/* <div>
                                 <Link to="#">Politica de Privacidad</Link>
                                 &middot;
                                 <Link to="#">Terminos &amp; Condiciones</Link>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </footer>

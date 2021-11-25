@@ -61,7 +61,7 @@ function Navbar() {
                         <Link className="nav-link" to="/store">Tienda</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#">Donativos</Link>
+                        <a className="nav-link" href="https://www.paypal.com/donate/?cmd=_donations&business=contacto@zonaviva.org&item_name=Zona%20Viva%20Huerto%20Urbano&currency_code=MXN">Donativos</a>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/contactanos">Contactos</Link>
