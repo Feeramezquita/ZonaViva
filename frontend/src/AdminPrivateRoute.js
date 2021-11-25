@@ -6,7 +6,7 @@ import swal from 'sweetalert';
 
 
 function AdminPrivateRoute({...rest}){
-
+{/*
     const history = useHistory();
     const [Authenticated, setAuthenticated]  = useState(false);
     const [loading,  setloading] = useState(true);
@@ -24,32 +24,11 @@ function AdminPrivateRoute({...rest}){
         };
     }, []);
     
-    axios.interceptors.response.use( undefined, function (err){
-            if(err.response.status === 401){
-                swal("Unauthorized", err.response.data.message, "warning");
-                history.push("/");
-            }
-            return Promise.reject(err);
-    });
-
-    axios.interceptors.response.use( undefined, function (error){
-
-            if(error.response.status === 403){
-                swal("Forbidden", error.response.data.message, "warning");
-                history.push('/403');
-            }else if(error.response.status === 404){
-                swal("404 error", "Url/Page Not Found", "warning");
-                history.push('/404');
-            }
-        return Promise.reject(error);
-        }
-    );
-    
 
     if (loading){
         return <h1>Loading...</h1>
     }
-
+*/}
     return (
         <Route {...rest}
             render={({props,location}) =>
