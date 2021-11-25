@@ -8,21 +8,36 @@ export default function Catalogo({navigation}){
 
     const [productos, setProductos] = useState([]);
     useEffect(() => {
-        axios.get('/backend/routes/api/admin/productos').then(response => {
-        //axios.get('/api/admin/productos').then(response => { 
-            this.setProductos(response.data)
-            
-        });
-        
+        axios.get('/api/admin/productos').then(response => { 
+            setProductos(response.data); 
+            //console.log("Hola", response); 
+        }).catch(error=>{console.log("ERROR", error.message)})
     }, []);
-    console.log(productos);
+    console.log(productos.length);
+    
+    if (productos.length == 0){
+        return null;
+    }
 
-    return(
+    const productosLista = productos.map(producto => {
+        return (
+            <View style={globalStyles.productos}>
+                <Text style={globalStyles.parrafosbutum}>{producto.nombre_item}</Text>
+                <Image style={globalStyles.imagenproducto} source={require("../assets/img/productos.jpeg")}></Image>
+                <TouchableOpacity style={globalStyles.detalles} onPress={() => navigation.push("Detalles")}>
+                    <Text style={globalStyles.parrafosbutum}>${producto.descripcion_item}</Text>
+                </TouchableOpacity>
+            </View>
+        )
+    });
+
+    return (
         <View style={globalStyles.containergreen}>
             <StatusBar style="auto" />
             <ScrollView>
-                {productos}
                 <Text style={globalStyles.titlecatalogo}>Conoce nuestros productos</Text>
+                {productosLista}
+                {/*<Text>{productos}</Text>
                 <View style={globalStyles.productos}>
                     <Text style={globalStyles.parrafosbutum}>Producto1</Text>
                     <Image style={globalStyles.imagenproducto} source={require("../assets/img/productos.jpeg")}></Image>
@@ -50,8 +65,8 @@ export default function Catalogo({navigation}){
                     <TouchableOpacity style={globalStyles.detalles} onPress={() => navigation.push("Detalles")}>
                         <Text style={globalStyles.parrafosbutum}>Detalles</Text>
                     </TouchableOpacity>
-                </View>
+                </View>*/}
             </ScrollView>
         </View>
-    )
+    );
 }
