@@ -9,6 +9,7 @@ function Productos() {
         axios.get('/api/admin/productos').then(response => { setProductos(response.data) });
     }, []);
 
+    console.log(productos);
     const productosLista = productos.map(producto => {
         return (
             <Producto key={producto.id_item} id={producto.id_item}
