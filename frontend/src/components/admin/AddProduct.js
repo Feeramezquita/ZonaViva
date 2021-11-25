@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom';
 import '../admin/styles/AddProduct.css';
 import axios from 'axios';
+import { Button, Modal } from 'react-bootstrap';
+
 
 function AddProduct() {
     const [producto, setProducto] = useState([]);
@@ -115,7 +117,7 @@ function AddProduct() {
                     </div>
                     <div className="card-footer">
                         <div className="form-row">
-                            <button type="submit" className="btn btn-primary btn-sm mr-1 botones"> Añadir</button>
+                            <button type="submit" className="btn btn-primary btn-sm mr-1 botones" data-toggle="modal" data-target="#exampleModal"> Añadir</button>
                             <Link to="/admin/Productos" className="btn btn-danger btn-sm botones"> Cancelar</Link>
                         </div>
                     </div>
