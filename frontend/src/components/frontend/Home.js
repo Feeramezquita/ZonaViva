@@ -4,8 +4,6 @@ import Navbar from '../../layouts/frontend/Navbar'
 
 import '../frontend/styles/Home.css';
 
-
-
 function Home(){
     return(
         
@@ -29,7 +27,7 @@ function Home(){
                     y del trabajo en comunidad, tomando nuestro entorno como prioridad. Una solución alternativa a la problemática ambiental en nuestro días.
                     </p>
                     <br></br><br></br><br></br><br></br>
-                </div>
+                </div> 
                 <div className='cursos'>
                     <div className='texto'>
                     <br></br><br></br><br></br><br></br><br></br><br></br>

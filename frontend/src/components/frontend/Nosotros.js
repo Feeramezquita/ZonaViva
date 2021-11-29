@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../../layouts/frontend/Footer';
 import Navbar from '../../layouts/frontend/Navbar';
-import '../frontend/styles/Nosotros.css';
+import './styles/Nosotros.css';
 
 function Nosotros() {
     return (
